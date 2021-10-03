@@ -21,7 +21,8 @@ I selected following features for analysis:
 - <b>mode</b>: Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.
 Unfortunately, Spotify API doesn't provide possibility to fetch playlist IDs for top50 chart for a given country, so I found playlists' IDs online and harcoded them in.
 
-My hypothesis is that people from different countries and cultures might prefer on average different music. For example, Latin world is known for its fantastic energetic music and dances, such as salsa. While places like Finland, Sweden or Norway have world-known heavy metal bands that easily make it to the charts. Perhaps somewhere in this world, unbeknown to me, people prefer slower tempo music. In summer time whole world might prefer vibrant high tempo "summer bangers" in major mode, and in winter (DJB in northern hemisphere and JJA in southern hemisphere) everyone is more melancholic, minor mode ballads.
+### Hypothesis
+My hypothesis is that people from different countries and cultures might prefer on average different music. For example, Latin world is known for its fantastic energetic music and dances, such as salsa. While places like Finland, Sweden or Norway have world-known heavy metal bands that easily make it to the charts. Perhaps somewhere in this world, unbeknown to me, people prefer slower tempo music. In summer time whole world might prefer vibrant high tempo "summer bangers" in major mode, and in winter (DJF in northern hemisphere and JJA in southern hemisphere) everyone is more melancholic, minor mode ballads.
 
 ## Project implementation
 All work happens fully on AWS, starting from the Spotify API calls, to the data visualization. Below is brief explanation of the workflow and pipelines. 
