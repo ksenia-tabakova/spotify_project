@@ -27,7 +27,7 @@ My hypothesis is that people from different countries and cultures might prefer 
 ## Project implementation
 All work happens fully on AWS, starting from the Spotify API calls, to the data visualization. Below is brief explanation of the workflow and pipelines. 
 1. To run Spotify API calls, a lambda function was created (see [code](https://github.com/ksenia-tabakova/spotify_project/blob/main/myFetchSpotifyDataSendtoAPI/lambda_function.py)). Lambda is triggered by CloudWatch event every week. At the first invocation constant json input is parsed, then lambda function invokes itself and starts making Spotify API calls for every country, one country after another, one track at a time, till all countries are exhausted. This allows Spotify API to make all calls within lambda's lifetime and in parallel. This lambda function was implemented as deployment package because it utilizes non-standard libraries: requests and spotipy.
-2. Spotify data is parsed to API Gateway I created. It has single method POST with lambda integration type. The lambda function[see code](https://github.com/ksenia-tabakova/spotify_project/blob/main/myAPIGatewayToKinesis/lambda_function.py) pulls data from API Gateway and places it to the Kinesis datastream.
+2. Spotify data is parsed to API Gateway I created. It has single method POST with lambda integration type. The lambda function [see code](https://github.com/ksenia-tabakova/spotify_project/blob/main/myAPIGatewayToKinesis/lambda_function.py) pulls data from API Gateway and places it to the Kinesis datastream.
 3. Lambda to read data from Kinesis and put to DynamoDB table was created (see [code](https://github.com/ksenia-tabakova/spotify_project/blob/main/myKinesisToDynamoDB/lambda_function.py)). This is the end of one of the pipelines. I didn't have more time to develop it further, but I have some ideas which I descibe briefly in the future work section.
 4. Lambda to read data from Kinesis and put to S3 bucket was created (see [code](https://github.com/ksenia-tabakova/spotify_project/blob/main/myKinesisToS3Bucket/lambda_function.py))
 5. I created AWS Glue database in console and made a crawler that runs over objects in S3 bucket, creating a table with Spotify data, with trackID as primary key. For the current implementation crawler is set to run on demand.
@@ -37,6 +37,7 @@ All work happens fully on AWS, starting from the Spotify API calls, to the data 
 AWS diagram:
 ![AWS diagram](./aws_diagram.png)
 ## Data analysis in QuickSight
+Graphs and report on findings can be found [here].
 
 ## Future work
 There are couple of things that would be worth improving/implementing.
