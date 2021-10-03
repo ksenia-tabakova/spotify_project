@@ -34,7 +34,7 @@ All work happens fully on AWS, starting from the Spotify API calls, to the data 
 7. Athena database was connected to the QuickSight in console to create data analysis.
 
 AWS diagram:
-
+![AWS diagram](./aws_diagram.png)
 ## Data analysis in QuickSight
 
 ## Future work
