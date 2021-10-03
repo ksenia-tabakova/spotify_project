@@ -5,7 +5,7 @@ Spotify data AWS pipelines project for Futurice Academy application, 2021
 The goal of this project is to poll Spotify data on top50 charts from 61 country (plus global chart) on a weekly basis, put it to the couple of pipelines using AWS services, and analyze charts data with dashboard. The focus and effort in this project is to use AWS services only and focus on building pipelines.
 
 ## Spotify data: what and why
-Spotify provides interesting [metrics](https://developer.spotify.com/documentation/web-api/reference/#object-audiofeaturesobject){:target="_blank"} for every track, which makes it possible to analyze what kind of songs in terms of energy, danceability, tempo, mode (minor or major) etc make it to the top50, and if there any difference in music taste between various countries. 
+Spotify provides interesting [metrics](https://developer.spotify.com/documentation/web-api/reference/#object-audiofeaturesobject) for every track, which makes it possible to analyze what kind of songs in terms of energy, danceability, tempo, mode (minor or major) etc make it to the top50, and if there any difference in music taste between various countries. 
 
 I used python library [spotify](https://spotipy.readthedocs.io/en/2.19.0/#) to make Spotify calls. 
 Two types of calls were done: 
