@@ -1,6 +1,6 @@
 ## Data analysis of Spotify data in Quick Sight
 The idea behind this project is to collect Spotify data every week, which will make possible to perform analysis that will take into account changes throughout the time. Naturally, at this stage it is impossible to do, so I performed analysis for one week only (week 39, 2021) at the moment of working on this project. When more data is accumulated, time dimension can be introduced.
-[!image](./Sum_of_Mode_by_Count.pdf)
+![image](./Sum_of_Mode_by_Count.pdf)
 ### Mode: major or minor?
 First thing I checked whether some countries' charts are occupied by song in major or minor mode. I created a barplot showing count of parameter mode per country. Because mode is either 1 for major or 0 for minor, sum(mode) is easy to interpret. Turns out, countries that have major songs dominating chart are primarily from Asia: among top 10 major-dominated charts, 9 are from  East and South-East Asia, and 10th being Iceland. These countries have 37-41 songs in major mode (out of 50). Bottom 10 countries group has 8 european countries, plus South Africa and Israel. Bottom entry belongs to Turkey - clear outlier, with only 10 songs in major mode - very dominated by minor mode music.
 ### Mode vs Danceability
