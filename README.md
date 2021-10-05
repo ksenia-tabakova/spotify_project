@@ -37,7 +37,7 @@ All work happens fully on AWS, starting from the Spotify API calls, to the data 
 AWS diagram:
 ![AWS diagram](./aws_diagram.png)
 ## Data analysis in QuickSight
-Graphs and report on findings can be found [here].
+Graphs and report on findings can be found [here](./DataAnalysis/repot_on_findings.md).
 
 ## Future work
 There are couple of things that would be worth improving/implementing.
