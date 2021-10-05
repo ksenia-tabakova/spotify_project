@@ -21,9 +21,12 @@ On the average, top 3 songs have higher tempo than any other positions (10-15 BP
 <img src="https://github.com/ksenia-tabakova/spotify_project/blob/main/DataAnalysis/average-tempo-by-position.png" width="600">
 
 ### Geographic distribution of valence
-Spotify provides interesting metric on valence - a measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry). Map showing median valence gives insights into geographic distribution of this metric. Latino world together with Spain generally have higher median valence values, with Brazil clearly standing out with highest median valence. South-East Asia, USA and South Africa form group of countries with lower median valence. Rest of the countries are somewhere in ebtween.
+Spotify provides interesting metric on valence - a measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry). Map showing median valence gives insights into geographic distribution of this metric. Latino world together with Spain generally have higher median valence values, with Brazil clearly standing out with highest median valence. South-East Asia, USA and South Africa form group of countries with lower median valence. Rest of the countries are somewhere in between.
+
+<img src="https://github.com/ksenia-tabakova/spotify_project/blob/main/DataAnalysis/median-valence-map.png" width="600">
 
 
 ## Future work
 - Once time dimension will be added, it will be possible to track how studied parameters change from week to week, from season to season and so on. 
 - More countries should be included into analysis - current set lacks true representativeness of music preferences across the globe.
+- It would be good to spend more time on basic data discovery to find more interesting interrelations - I would first collect more data from more countries, perhaps include lyrics to analyze meaning of tracks. When much more data is collected, it would be of interest to create a predictive model, that can make predictions whether certain type of song has what it takes to be successful. 
