@@ -14,9 +14,11 @@ To further investigate tendency with major and minor mode, I made a scatterplot 
 - 
 <img src="https://github.com/ksenia-tabakova/spotify_project/blob/main/DataAnalysis/Mode-vs-danceability-per-country.png" width="600">
 
-
 ### Mean tempo vs position
+
 On the average, top 3 songs have higher tempo than any other positions (10-15 BPM higher than closest entry is at the position 7). On average people in the selected for analysis countries streamed greater tempo songs.
+
+<img src="https://github.com/ksenia-tabakova/spotify_project/blob/main/DataAnalysis/average-tempo-by-position.png" width="600">
 
 ##Future work
 Once time dimension will be added, it will be possible to track how studied parameters change from week to week, from season to season and so on. 
