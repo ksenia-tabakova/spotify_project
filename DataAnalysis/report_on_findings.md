@@ -20,5 +20,7 @@ On the average, top 3 songs have higher tempo than any other positions (10-15 BP
 
 <img src="https://github.com/ksenia-tabakova/spotify_project/blob/main/DataAnalysis/average-tempo-by-position.png" width="600">
 
-##Future work
+### 
+
+## Future work
 Once time dimension will be added, it will be possible to track how studied parameters change from week to week, from season to season and so on. 
