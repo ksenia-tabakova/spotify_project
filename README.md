@@ -38,6 +38,7 @@ AWS diagram:
 ![AWS diagram](./aws_diagram.png)
 ## Data analysis in QuickSight
 Graphs and report on findings can be found [here](./DataAnalysis/repot_on_findings.md).
+QuickSight dashboard can be accessed [here](https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/865e232c-ca92-4981-a82b-a2744404ce49/views/14b4411f-1c56-42aa-aea2-43e6939a2ad7) (requires QuickSight account)
 
 ## Future work
 There are couple of things that would be worth improving/implementing.
