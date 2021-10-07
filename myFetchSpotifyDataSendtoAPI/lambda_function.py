@@ -107,8 +107,8 @@ def get_spotify_data(country, playlist_id):
     # URL of API I have created with AWS API Getway
     URL='https://8ef3kcjkvc.execute-api.us-east-1.amazonaws.com/beta/main'
     
-    client_id = "1964d3e09d2640cfa62d7c156acc0cc6"  #removed from this code for security reasons
-    client_secret = "56d16e6ba6d845c3b2e2858034f17e20" #removed from this code for secutiry reasons
+    client_id = "XXXXXXXXXXXX"  #removed from this code for security reasons
+    client_secret = "XXXXXXXXXXXX" #removed from this code for secutiry reasons
     
     from spotipy.oauth2 import SpotifyClientCredentials #
     from spotipy import MemoryCacheHandler  
